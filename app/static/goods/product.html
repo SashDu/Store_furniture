@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../app/static/deps/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../../app/static/deps/css/my_css.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="../../app/static/deps/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../app/static/deps/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../app/static/deps/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../../app/static/deps/favicon/site.webmanifest">
-    <title>Регистрация</title>
+    <link rel="stylesheet" href="../deps/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../deps/css/my_css.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../deps/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../deps/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../deps/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../deps/favicon/site.webmanifest">
+    <title>Товар</title>
 </head>
 
 <body>
@@ -77,23 +77,24 @@
                     <button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Каталог
-                        <img class="mx-1" src="../../app/static/deps/icons/grid-fill.svg" alt="Catalog Icon" width="16"
+                        <img class="mx-1" src="../deps/icons/grid-fill.svg" alt="Catalog Icon" width="16"
                              height="16">
                     </button>
                     <ul class="dropdown-menu bg-dark" data-bs-theme="dark">
-                        <li><a class="dropdown-item text-white" href="../goods/catalog.html">Все товары</a></li>
-                        <li><a class="dropdown-item text-white" href="../goods/catalog.html">Кухня</a></li>
-                        <li><a class="dropdown-item text-white" href="../goods/catalog.html">Спальня</a></li>
-                        <li><a class="dropdown-item text-white" href="../goods/catalog.html">Гостинная</a></li>
-                        <li><a class="dropdown-item text-white" href="../goods/catalog.html">Офис</a></li>
-                        <li><a class="dropdown-item text-white" href="../goods/catalog.html">Фурнитура</a></li>
-                        <li><a class="dropdown-item text-white" href="../goods/catalog.html">Декор</a></li>
+                        <li><a class="dropdown-item text-white" href="html">Все товары</a></li>
+                        <li><a class="dropdown-item text-white" href="html">Кухня</a></li>
+                        <li><a class="dropdown-item text-white" href="html">Спальня</a></li>
+                        <li><a class="dropdown-item text-white" href="html">Гостинная</a></li>
+                        <li><a class="dropdown-item text-white" href="html">Офис</a></li>
+                        <li><a class="dropdown-item text-white" href="html">Фурнитура</a></li>
+                        <li><a class="dropdown-item text-white" href="html">Декор</a></li>
                     </ul>
                 </div>
                 <!-- Значек корзины, вызывает модальное окно -->
                 <div>
-                    <button type="button" class="btn btn-dark btn-secondary d-flex" id="modalButton" aria-expanded="false">
-                        <img class="mx-1" src="../../app/static/deps/icons/basket2-fill.svg" alt="Catalog Icon" width="24"
+                    <button type="button" class="btn btn-dark btn-secondary d-flex" id="modalButton"
+                        aria-expanded="false">
+                        <img class="mx-1" src="../deps/icons/basket2-fill.svg" alt="Catalog Icon" width="24"
                              height="24">
                         <span>0</span>
                     </button>
@@ -121,13 +122,15 @@
                                                     <div class="col p-0">
                                                         <div class="input-group">
                                                             <span class="input-group-btn">
-                                                                <button type="button" class="btn btn-dark btn-sm decrement"
+                                                                <button type="button"
+                                                                    class="btn btn-dark btn-sm decrement"
                                                                     data-cart-id="" data-cart-change-url="">-</button>
                                                             </span>
                                                             <input type="text" class="form-control number" value="1"
                                                                 readonly>
                                                             <span class="input-group-btn">
-                                                                <button type="button" class="btn btn-dark btn-sm increment"
+                                                                <button type="button"
+                                                                    class="btn btn-dark btn-sm increment"
                                                                     data-cart-id="" data-cart-change-url="">+</button>
                                                             </span>
                                                         </div>
@@ -138,7 +141,7 @@
                                                     <div class="col p-0"><strong>100.00 $</strong></div>
                                                     <div class="col p-0">
                                                         <a href="#" class="remove-from-cart" data-cart-id="">
-                                                            <img class="mx-1" src="../../app/static/deps/icons/trash3-fill.svg"
+                                                            <img class="mx-1" src="../deps/icons/trash3-fill.svg"
                                                                 alt="Catalog Icon" width="16" height="16">
                                                         </a>
                                                     </div>
@@ -172,48 +175,42 @@
                 </div>
                 <div class="col-lg-10">
                     <!-- Контент на странице -->
-                    <div class="row">
-                        <div class="container mt-5">
-                            <div class="row justify-content-center">
-                                <div class="col-md-9 bg-white p-4 mb-5 mx-2 rounded custom-shadow">
-                                    <h2 class="text-center mb-4">Регистрация</h2>
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-md-6 mb-3">
-                                                <label for="firstName" class="form-label">Имя*</label>
-                                                <input type="text" class="form-control" id="firstName"
-                                                    placeholder="Введите ваше имя" required>
+                    <div class="container mt-5">
+                        <div class="card mb-4 custom-shadow">
+                            <div class="row">
+                                <!-- Миниатюры -->
+                                <div class="col-md-4">
+                                    <img src="../deps/images/goods/set%20of%20tea%20table%20and%20three%20chairs.jpg"
+                                        class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                                </div>
+                                <div class="col-md-4 ">
+                                    <p class="product_id mt-3">id: 002654</p>
+                                </div>
+                                <!-- Увеличить изображение в модальном окне -->
+                                <div class="modal fade" id="imageModal1" tabindex="-1"
+                                    aria-labelledby="imageModal1Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="imageModal1Label">Изображение 1</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Закрыть"></button>
                                             </div>
-                                            <div class="col-md-6 mb-3">
-                                                <label for="lastName" class="form-label">Фамилия*</label>
-                                                <input type="text" class="form-control" id="lastName"
-                                                    placeholder="Введите вашу фамилию" required>
-                                            </div>
-                                            <div class="col-md-6 mb-3">
-                                                <label for="username" class="form-label">Имя пользователя*</label>
-                                                <input type="text" class="form-control" id="username"
-                                                    placeholder="Введите ваше имя пользователя" required>
-                                            </div>
-                                            <div class="col-md-6 mb-3">
-                                                <label for="email" class="form-label">Email*</label>
-                                                <input type="email" class="form-control" id="email"
-                                                    placeholder="Введите ваш email" required>
-                                            </div>
-                                            <div class="col-md-6 mb-3">
-                                                <label for="password1" class="form-label">Пароль*</label>
-                                                <input type="password" class="form-control" id="password1"
-                                                    placeholder="Введите пароль" required>
-                                            </div>
-                                            <div class="col-md-6 mb-3">
-                                                <label for="password2" class="form-label">Подтверждение пароля*</label>
-                                                <input type="password" class="form-control" id="password2"
-                                                    placeholder="Подтвердите пароль" required>
+                                            <div class="modal-body">
+                                                <img src="../deps/images/goods/set%20of%20tea%20table%20and%20three%20chairs.jpg"
+                                                    class="img-fluid" alt="Изображение 1">
                                             </div>
                                         </div>
-                                        <button type="submit"
-                                            class="btn btn-dark btn-block">Зарегистрироваться</button>
-                                    </form>
+                                    </div>
                                 </div>
+                            </div>
+                            <!-- Описание товара -->
+                            <div class="card-body">
+                                <p class="card-text">Цена: <strong>150.00 $</strong></p>
+                                <h5 class="card-title">Чайный столик и три стула</h5>
+                                <p class="card-text">Комплект из трёх стульев и дизайнерский столик для гостинной
+                                    комнаты.</p>
+                                <a href="#" class="btn btn-dark add-to-cart">Добавить в корзину</a>
                             </div>
                         </div>
                     </div>
@@ -221,10 +218,10 @@
             </div>
         </div>
     </section>
-    <script src="../../app/static/deps/js/jquery/jquery-3.7.0.min.js"></script>
-    <script src="../../app/static/deps/js/jquery-events.js"></script>
-    <script src="../../app/static/deps/js/jquery-ajax.js"></script>
-    <script src="../../app/static/deps/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../deps/js/jquery/jquery-3.7.0.min.js"></script>
+    <script src="../deps/js/jquery-events.js"></script>
+    <script src="../deps/js/jquery-ajax.js"></script>
+    <script src="../deps/js/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
