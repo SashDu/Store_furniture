@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.postgres',
     'debug_toolbar',
     'main',
     'goods',
@@ -82,9 +83,9 @@ WSGI_APPLICATION = 'app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'home',
-        'USER': 'home',
-        'PASSWORD': 'hom',
+        'NAME': 'data_db',
+        'USER': 'owner',
+        'PASSWORD': 'owner120496',
         'HOST': 'localhost',
         'PORT': '5432',
     }
